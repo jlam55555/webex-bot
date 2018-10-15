@@ -19,7 +19,7 @@ This is a sample Cisco Spark bot built with Botkit.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 // code from https://www.botkit.ai/docs/readme-ciscospark.html#getting-started
-var Botkit = require('./lib/Botkit.js');
+var Botkit = require('botkit');
 
 var controller = Botkit.sparkbot({
     debug: true,
