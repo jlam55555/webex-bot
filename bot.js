@@ -19,18 +19,17 @@ controller.setupWebserver(process.env.PORT || 3000, function(err, webserver) {
     });
 });
 
+// if hear hello, do something
 controller.hears('hello', 'direct_message,direct_mention', function(bot, message) {
     bot.reply(message, 'Hi');
 });
 
-controller.on('message_received', function(bot, message) {
-  console.log('Message received: ' + message);
-});
-
+// respond to direct mention (@fluorination)
 controller.on('direct_mention', function(bot, message) {
     bot.reply(message, 'You mentioned me and said, "' + message.text + '"');
 });
 
+// direct message
 controller.on('direct_message', function(bot, message) {
     bot.reply(message, 'I got your private message. You said, "' + message.text + '"');
 });
