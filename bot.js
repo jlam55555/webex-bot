@@ -19,7 +19,7 @@ This is a sample Cisco Spark bot built with Botkit.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 // code from https://www.botkit.ai/docs/readme-ciscospark.html#getting-started
-/*var Botkit = require('botkit');
+var Botkit = require('botkit');
 
 var controller = Botkit.sparkbot({
     debug: true,
@@ -53,9 +53,9 @@ controller.on('direct_mention', function(bot, message) {
 
 controller.on('direct_message', function(bot, message) {
     bot.reply(message, 'I got your private message. You said, "' + message.text + '"');
-});*/
+});
 
-
+/*
 var env = require('node-env-file');
 env(__dirname + '/.env');
 
@@ -150,3 +150,4 @@ function usage_tip() {
     console.log('Get a Botkit Studio token here: https://studio.botkit.ai/')
     console.log('~~~~~~~~~~');
 }
+*/
